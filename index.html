@@ -52,16 +52,17 @@
         <a class="nav-link color-yellow" href="#">Home</a>
       </li>
       <li class="nav-list">
-          <div class="dropdown">
-              <button class="btn color-yellow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Cafe Menu
-              </button>
-              <div class="dropdown-menu bg-brown color-yellow" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Hot Beverages </a>
-                <a class="dropdown-item" href="#">Cold Beverages</a>
-                <a class="dropdown-item" href="#">Snacks</a>
-              </div>
-            </div>
+        <div class="dropdown">
+          <button class="btn color-yellow dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Cafe Menu
+          </button>
+          <div class="dropdown-menu bg-brown color-yellow" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Hot Beverages </a>
+            <a class="dropdown-item" href="#">Cold Beverages</a>
+            <a class="dropdown-item" href="#">Snacks</a>
+          </div>
+        </div>
       </li>
       <li class="nav-list">
         <a class="nav-link color-yellow" href="#">Shop locations</a>
@@ -76,22 +77,53 @@
 
   </nav>
 
-  <!-- hero image section -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <div class="hero-image mt-5 jumbotron jumbotron-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <p class="hero-text ml-4 ml-md-5 mt-5 pt-lg-5 pl-lg-3 mb-0 color-yellow">Coffee is</p>
-    <p class="hero-text ml-4 ml-md-5 mb-0 pl-lg-3 color-yellow">inlia hug in</p>
-    <p class="hero-text ml-4 ml-md-5 mb-0  pl-lg-3 color-yellow"> a mug </p>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
 
-    <div class="mt-2 ml-1 ml-md-5 pl-lg-3">
-      <a href="#">
-        <img src="img/swiggy.jpg" class="px-3 pt-2 pl-md-0 img-icon img-fluid " alt="swiggy" />
-      </a>
-      <a href="#">
-        <img src="img/zomato.jpeg" class="px-3 pt-2 pl-md-0 img-icon img-fluid " alt="zomato">
-      </a>
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image active carousel-item  mt-5 jumbotron jumbotron-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <img src="img/carousel1.jpeg" class="img-fluid" alt="carousel-img">
+      </div>
+
+      <!-- hero image section -->
+      <div class="hero-image carousel-item  mt-5 jumbotron jumbotron-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p class="hero-text ml-4 ml-md-5 mt-5 pt-lg-5 pl-lg-3 mb-0 color-yellow">Coffee is</p>
+        <p class="hero-text ml-4 ml-md-5 mb-0 pl-lg-3 color-yellow">inlia hug in</p>
+        <p class="hero-text ml-4 ml-md-5 mb-0  pl-lg-3 color-yellow"> a mug </p>
+
+        <div class="mt-2 ml-1 ml-md-5 pl-lg-3">
+          <a href="#">
+            <img src="img/swiggy.jpg" class="px-3 pt-2 pl-md-0 img-icon img-fluid " alt="swiggy" />
+          </a>
+          <a href="#">
+            <img src="img/zomato.jpeg" class="px-3 pt-2 pl-md-0 img-icon img-fluid " alt="zomato">
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item carousel-image carousel-item mt-5 jumbotron jumbotron-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <img src="img/carousel1.jpg"  class="img-fluid" alt="carousel-img">
+      </div>
     </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
   </div>
+
+
 
 
   <div class="container-fluid">
@@ -104,7 +136,6 @@
           <div>
             <h3 class="text-center float-md-left pl-md-2">Cafe Latte</h3>
             <p class="text-center float-md-right pt-md-2 pr-md-2">Rs.159/-</p>
-            <div class="text-center float-md-left pl-md-2">4.5/5</div>
           </div>
         </div>
       </div>
@@ -116,7 +147,6 @@
           <div>
             <h3 class="text-center float-md-left pl-md-2">Iced Latte</h3>
             <p class="text-center float-md-right pt-md-2 pr-md-2">Rs.189/-</p>
-            <div class="text-center float-md-none pl-md-2">4.3/5</div>
           </div>
         </div>
       </div>
@@ -128,17 +158,16 @@
           <div>
             <h3 class="text-center float-md-left pl-md-2">Milkshakes</h3>
             <p class="text-center float-md-right pt-md-2 pr-md-2">Rs.99/-</p>
-            <div class="text-center float-md-left pl-md-2">3.9/5</div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="row mt-2">
-      <div class="col-md-6 pt-3 pt-md-0">
+      <div class="col-md-6 pt-3">
         <img id="shop" src="img/about.jpg" alt="Coffeeshop" />
       </div>
-      <div class="para col-md-6 pt-3 pt-md-0">
+      <div class="para col-md-6 pt-3">
         <p>The love for coffee was the reason it all begun in 1999, in Patras. 2006 was a milestone as we decided to
           set up our own coffee processing unit by investing in equipment and know-how. In 2009, with the
           empowerment of the team, we decided to set the goals very high and envisioned something
@@ -180,8 +209,8 @@
         </div>
       </div>
       <div class="footer-copyright text-center py-3">&copy; 2018 Copyright:
-          <a href=""> CoffeeIsland.com</a>
-        </div>
+        <a href=""> CoffeeIsland.com</a>
+      </div>
   </footer>
 </body>
 
