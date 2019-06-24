@@ -1,0 +1,71 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #ce9f61;
+}
+
+.bg-brown {
+    background-color: #744c17;
+    
+}
+
+.color-yellow, .navbar-dark .navbar-nav .nav-link {
+    color: #e8bb41;
+}
+
+.footer-bg {
+    background-color: #e8bb41;
+}
+
+#logo {
+    width: 30vw;
+}
+
+s .navbar-dark .navbar-nav .nav-link {
+    color: #e8bb41;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-collapse {
+    align-items: flex-start;
+}
+
+.hero-image {
+    min-height: 35vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    font-size: 5vw;
+}
+
+.img-icon {
+    width: 4rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+#shop {
+    width: 100%;
+}
+
+.card div {
+    background-color: #744c17;
+    color: #e8bb41;
+}
+
+
+.footer-bg {
+    background-color: #462400;
+    color: #ffffff;
+}
